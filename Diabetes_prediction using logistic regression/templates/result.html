@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<style>
+body {margin:25px;}
+
+div.polaroid {
+  width: 70%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: justify
+  padding: 10px 20px;
+}
+</style>
+</head>
+<body style="background-color:powderblue;">
+
+<h1 style="text-align:center;">Result For Ur Diabities Prediction...</h1>
+ <h1 style="text-align:center"> your result is  {{result}}</h1>
+
+ <img src="{{ url_for('static', filename='result2.jpg' ) }}">
+
+</div>
+<div>
+<h3> Pleas follow  the following steps to avoid diabities..</h3>
+<ol style="font-size:20">
+<li>Cut Sugar and Refined Carbs From Your Diet.</li>
+<li>Work Out Regularly.</li>
+<li>Drink Water as Your Primary Beverage.</li>
+<li>Lose Weight If You're Overweight or Obese.</li>
+<li>Quit Smoking.</li>
+<li>Follow a Very-Low-Carb Diet.</li>
+<li>Avoid Sedentary Behaviors.</li>
+</ol>
+
+
+
+
+</body>
+</html>

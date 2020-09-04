@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>Diabetes prediction</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link ref="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body style="background-color:grey;">
+
+
+
+<div class="bg-img">
+
+    <h1 style="text-align:'center'">Diabetes Prediction For you..</h1>
+
+        <form action="/process" method="POST"><br>
+            <label for="process">Pregencies</label><br>
+
+
+           <input type="text" name="Pregencies" id="Pregencies" ><br>
+          <label for="Glucose">Glucose</label><br>
+           <input type="text" name="Glucose" id="Glucose"><br>
+          <label for="Glucose">BloodPressure</label><br>
+           <input type="text" name="BloodPressure" id="BloodPressure"><br>
+          <label for="Glucose">SkinThickness</label><br>
+           <input type="text" name="SkinThickness" id="SkinThickness"><br>
+          <label for="Glucose">Insulin</label><br>
+           <input type="text" name="Insulin" id="Insulin"><br>
+          <label for="Glucose">BMI</label><br>
+           <input type="text" name="BMI" id="BMI"><br>
+          <label for="Glucose">DiabetesPedigreeFunction</label><br>
+           <input type="text" name="DiabetesPedigreeFunction" id="DiabetesPedigreeFunction"><br>
+          <label for="Glucose">Age</label><br>
+           <input type="text" name="Age" id="Age"><br>
+
+
+
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
+
+<div>
+<img src="{{url_for('static', filename='diabetes-monitor-fruits-vegetables-small_597x347.png') }}") align='middle'><br>
+</div>
+
+<p>
+
+  What is Diabetes?
+In this section:
+
+What are the different types of diabetes?
+How common is diabetes?
+Who is more likely to develop type 2 diabetes?
+What health problems can people with diabetes develop?
+Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy. Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well. Glucose then stays in your blood and doesn’t reach your cells.
+
+Over time, having too much glucose in your blood can cause health problems. Although diabetes has no cure, you can take steps to manage your diabetes and stay healthy.
+
+Sometimes people call diabetes “a touch of sugar” or “borderline diabetes.” These terms suggest that someone doesn’t really have diabetes or has a less serious case, but every case of diabetes is serious.
+</p>
+<p>
+    Body Mass Index (BMI) is a measurement of a person’s weight with respect to his or her height. It is more of an indicator than a direct measurement of a person’s total body fat.
+
+BMI, more often than not, correlates with total body fat. This means that as the BMI score increases, so does a person’s total body fat.
+</p>
+<img src="{{url_for('static', filename='BMI.jpg') }}"><br>
+<a style="font-size:25" href="https://patient.info/doctor/bmi-calculator-calculator">click here to calculate BMI</a>
+</body>
+</html>
